@@ -1,6 +1,32 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main">
 
-<% @projects.each do |project| %>
-<%= project.title %>
-<% end %>
+  <div class="nav-list">
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">My Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="container" id="home">
+    <%=image_tag("picme.png")%>
+    <p>Après un Master 2 en Marketing & Communication et 5 ans dans le marketing digital, j'ai décidé de monter en compétence dans le domaine technique en participant au bootcamp Le Wagon en avril 2021 !</p>
+    <p>Désormais alumni du Wagon, pris de passion pour le code avec l'envie d'apprendre toujours plus de nouvelles choses, je continue mon chemin en autodidacte en attendant de trouver ma prochaine aventure professionnelle !<br>
+    Principalement, j'essaye de développer des applications pour m'entrainer et tester de nouvelles choses tout en essayant de me spécialiser en Javascript !</p>
+  </div>
+
+  <div class="container" id="skills">
+    <p>All my skills here</p>
+  </div>
+
+  <div class="container" id="projects">
+    <% @projects.each do |project| %>
+      <%= project.title %>
+    <% end %>
+  </div>
+
+  <div class="container" id="contact">
+    <p>Redirect to mail + téléphone</p>
+  </div>
+</div>
