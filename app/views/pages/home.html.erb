@@ -4,7 +4,7 @@
     <ul id="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">My Work</a></li>
+      <li><a href="#work">My Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -22,8 +22,8 @@
   </div>
 
   <div class="container" id="skills">
-    <div class="ruby">
-      <h2>Ruby on Rails</h2>
+    <div class="box">
+      <h3>Ruby on Rails</h3>
       <ul>
         <li>Ruby programming language</li>
         <li>MVC architecture</li>
@@ -34,8 +34,8 @@
       </ul>
     </div>
 
-    <div class="javascript">
-      <h2>JavaScript</h2>
+    <div class="box">
+      <h3>JavaScript</h3>
       <ul>
         <li>ES6 language</li>
         <li>Basic dynamic webpage animation</li>
@@ -45,8 +45,8 @@
       </ul>
     </div>
 
-    <div class="other">
-      <h2>Mais aussi...</h2>
+    <div class="box">
+      <h3>Mais aussi...</h3>
       <ul>
         <li>HTML5 & CSS3 for front-end</li>
         <li>Boostrap framework</li>
@@ -57,13 +57,18 @@
     </div>
   </div>
 
-  <div class="container" id="projects">
+  <div class="container" id="work">
+    <h2>My different projects</h2>
     <% @projects.each do |project| %>
-      <%= project.title %>
+    <div class="project">
+      <h2><%= project.title %></h2>
+      <p><%= project.description %></p>
+    </div>
     <% end %>
   </div>
 
   <div class="container" id="contact">
-    <p>Redirect to mail + téléphone</p>
+    <i class="far fa-paper-plane"></i><p>spouzon@gmail.com</p>
+    <i class="fas fa-cloud-download-alt"></i><p>my little CV</p>
   </div>
 </div>

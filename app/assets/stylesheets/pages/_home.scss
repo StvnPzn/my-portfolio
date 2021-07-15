@@ -13,3 +13,23 @@
 #home > .description {
   text-align: center;
 }
+
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
