@@ -1,17 +1,28 @@
 #home {
   display: flex;
-  justify-content: center;
-  align-items: space-around;
+  justify-content: space-evenly;
 }
 
-#home > .picme {
+#home .picme {
   width: 25%;
   height: 300px;
   object-fit: cover;
 }
 
-#home > .description {
+#home .description {
+  background-color: white;
   text-align: center;
+  width: 60%;
+  border-radius : 3px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0px #d14519;
+  padding: 49px 30px;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px 1px #d14519;
+  margin-bottom: 20px;
 }
 
 #skills {
@@ -22,10 +33,22 @@
 .box {
   border-radius: 2px;
   border: 1px solid black;
+  box-shadow: 3px 3px 0px #d14519;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+.box ul {
+  list-style-type: none;
 }
 
 .general {
-  background-color: #e0e8ed;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 .project {

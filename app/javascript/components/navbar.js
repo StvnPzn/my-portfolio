@@ -11,4 +11,4 @@ const initScroll = () => {
   });
 }
 
-export { initScroll };
+// export { initScroll };

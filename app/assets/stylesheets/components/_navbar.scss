@@ -3,20 +3,19 @@
   justify-content: center;
   background-color: white;
   box-shadow: 0px 5px 20px lightgrey;
+  padding: 16px 0 0 0;
 }
 
-.sticky {
-  position: fixed;
-  width: 100%;
-}
-
-.nav-list ul:first-child:before {
-  padding-left: 0;
-}
+// .sticky {
+//   position: fixed;
+//   width: 100%;
+//   z-index: 1000;
+// }
 
 #menu li {
   display: inline;
   border: 1px solid black;
+  border-radius: 3px;
   box-shadow: 3px 3px 0px #d14519;
   padding: 0 10px;
   margin: 0 5px;
