@@ -1,12 +1,14 @@
 #home {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #home .picme {
   width: 25%;
   height: 300px;
   object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0px black;
 }
 
 #home .description {
@@ -21,12 +23,12 @@
 
 h2 {
   text-shadow: 2px 2px 1px #d14519;
-  margin-bottom: 20px;
+  margin: 50px 0;
 }
 
 #skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .box {
@@ -56,12 +58,16 @@ h2 {
   border-radius: 2px;
   border: 1px solid black;
   box-shadow: 3px 3px 0px #d14519;
-  // margin-right: 10px;
-  // margin-bottom: 10px;
   padding: 10px;
 }
 
 #contact {
   display: flex;
   justify-content: center;
+}
+
+#contact i {
+  margin: 10px;
+  font-size: 30px;
+  color: #d14519;
 }
