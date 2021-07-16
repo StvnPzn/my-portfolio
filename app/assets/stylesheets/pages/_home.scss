@@ -1,6 +1,6 @@
 #home {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #home .picme {
@@ -20,14 +20,13 @@
 }
 
 h2 {
-  text-align: center;
   text-shadow: 2px 2px 1px #d14519;
   margin-bottom: 20px;
 }
 
 #skills {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .box {
@@ -46,13 +45,20 @@ h2 {
   list-style-type: none;
 }
 
-.general {
-  background-color: white;
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 }
 
-.project {
-  display: flex;
-  justify-content: center;
+.project .project-details {
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0px #d14519;
+  // margin-right: 10px;
+  // margin-bottom: 10px;
+  padding: 10px;
 }
 
 #contact {

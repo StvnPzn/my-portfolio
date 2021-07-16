@@ -25,4 +25,12 @@ woodstock = Project.create!(title: "Woodstock",
   others: "HTML5 - CSS3 - Three.js (plugin 3D)")
 puts "🤓🤓 Woodstock done 🤓🤓"
 
+puts "💥💥 Creating the third project 💥💥"
+medium = Project.create!(title: "Medium Copycat",
+  description: "Test technique que j'ai poursuivi pour intégrer de nouvelles fonctionnalités et tester de nouvelles choses sur Rails et JS.",
+  url: "https://medium-copycat.herokuapp.com/",
+  languages: "Ruby on Rails",
+  others: "HTML5 - CSS3 - Devise gem - Rails editor rich text")
+puts "🤓🤓 Medium done 🤓🤓"
+
 puts "🤗🤗 Seeds is over, enjoy 🤗🤗"
