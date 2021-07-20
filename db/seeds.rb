@@ -11,7 +11,7 @@ puts "🥰🥰 Done 🥰🥰"
 
 puts "💥💥 Creating the first project 💥💥"
 day_movie = Project.create!(title: "A Day in a Movie",
-  description: "\"Airbnb copycat\" où vous pourrez louer n'importe quel objet de votre film préféré !",
+  description: "\"Airbnb copycat\" où vous pourrez louer n'importe quel objet de votre film préféré.",
   url: "https://a-day-in-a-movie.herokuapp.com/",
   languages: "Ruby on Rails",
   others: "HTML5 - CSS3")
@@ -31,7 +31,7 @@ puts "🤓🤓 Woodstock done 🤓🤓"
 
 puts "💥💥 Creating the third project 💥💥"
 medium = Project.create!(title: "Medium Copycat",
-  description: "Test technique que j'ai poursuivi pour intégrer de nouvelles fonctionnalités et tester de nouvelles choses sur Rails et JS.",
+  description: "Rails app inspiré du site Medium pour tester des fonctionnalités Ruby on Rails, améliorer la logique de code et prendre en main Javascript",
   url: "https://medium-copycat.herokuapp.com/",
   languages: "Ruby on Rails",
   others: "HTML5 - CSS3 - Devise gem - Rails editor rich text")

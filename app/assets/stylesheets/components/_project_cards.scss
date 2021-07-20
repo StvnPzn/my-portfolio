@@ -1,0 +1,28 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.project .project-card {
+  border-radius: 2px;
+  border: 1px solid black;
+  overflow: hidden;
+  transition: all 250ms ease;
+  &:hover {
+    box-shadow: 3px 3px 0px #d14519;
+  }
+  img {
+    width: 116%;
+  }
+  h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bolder;
+    color: #d14519;
+  }
+  h3, p {
+    padding: 0 0 0 10px;
+  }
+}
