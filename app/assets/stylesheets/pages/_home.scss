@@ -70,7 +70,13 @@ h2 {
   border-radius: 2px;
   border: 1px solid black;
   box-shadow: 3px 3px 0px #d14519;
-  padding: 10px;
+  overflow: hidden;
+  img {
+    width: 116%;
+  }
+  h2, p {
+    padding: 0 0 0 10px;
+  }
 }
 
 #contact {

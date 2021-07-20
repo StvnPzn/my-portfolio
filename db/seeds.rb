@@ -15,6 +15,8 @@ day_movie = Project.create!(title: "A Day in a Movie",
   url: "https://a-day-in-a-movie.herokuapp.com/",
   languages: "Ruby on Rails",
   others: "HTML5 - CSS3")
+photo = URI.open('https://res.cloudinary.com/dtzqhhd28/image/upload/v1626774165/adayinamovie_sdx1fd.png')
+day_movie.photo.attach(io: photo, filename: 'adayinamovie.png', content_type: 'image/png')
 puts "🤓🤓 A day in a Movie done 🤓🤓"
 
 puts "💥💥 Creating the second project 💥💥"
@@ -23,6 +25,8 @@ woodstock = Project.create!(title: "Woodstock",
   url: "http://www.woodstock-design.store/",
   languages: "Ruby on Rails",
   others: "HTML5 - CSS3 - Three.js (plugin 3D)")
+photo = URI.open('https://res.cloudinary.com/dtzqhhd28/image/upload/v1626774179/woodstock_n5dat9.png')
+woodstock.photo.attach(io: photo, filename: 'woodstock.png', content_type: 'image/png')
 puts "🤓🤓 Woodstock done 🤓🤓"
 
 puts "💥💥 Creating the third project 💥💥"
@@ -31,6 +35,8 @@ medium = Project.create!(title: "Medium Copycat",
   url: "https://medium-copycat.herokuapp.com/",
   languages: "Ruby on Rails",
   others: "HTML5 - CSS3 - Devise gem - Rails editor rich text")
+photo = URI.open('https://res.cloudinary.com/dtzqhhd28/image/upload/v1626774202/mediumcopycat_fceuzn.png')
+medium.photo.attach(io: photo, filename: 'mediumcopycat.png', content_type: 'image/png')
 puts "🤓🤓 Medium done 🤓🤓"
 
 puts "🤗🤗 Seeds is over, enjoy 🤗🤗"
