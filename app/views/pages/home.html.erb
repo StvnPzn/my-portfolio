@@ -1,89 +1,85 @@
-<div class="main">
+<div class="nav-list">
+  <ul id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">My Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
 
-  <div class="nav-list">
-    <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#work">My Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="container" id="home">
+  <div class="description">
+    <h1>Steven P.</h1>
+    <h3>Fullstack web developer</h3>
+    <p>Après un Master 2 en Marketing & Communication et 5 ans dans le marketing digital, j'ai décidé de donner un virage technique à ma carrière en participant au bootcamp Le Wagon en avril 2021 !</p>
+    <p>
+      Désormais alumni du Wagon, pris de passion pour le code avec l'envie d'apprendre toujours plus de nouvelles choses, je continue à faire mes armes en développant chaque semaine de nouveaux projets  !
+    </p>
   </div>
+  <%=image_tag("picme.png", alt: "Belle photo de moi", class: "picme")%>
+</div>
 
-  <div class="container my-4" id="home">
-    <div class="description">
-      <h1>Steven P.</h1>
-      <h3>Fullstack web developer</h3>
-      <p>Après un Master 2 en Marketing & Communication et 5 ans dans le marketing digital, j'ai décidé de donner un virage technique à ma carrière en participant au bootcamp Le Wagon en avril 2021 !</p>
-      <p>
-        Désormais alumni du Wagon, pris de passion pour le code avec l'envie d'apprendre toujours plus de nouvelles choses, je continue à faire mes armes en développant chaque semaine de nouveaux projets  !
-      </p>
+<div class="container">
+  <h2>Skills</h2>
+  <div id="skills">
+    <div class="box">
+      <i class="fas fa-gem"></i>
+      <h3>Ruby on Rails</h3>
+      <ul>
+        <li><i class="far fa-check-circle"></i> Langage Ruby</li>
+        <li><i class="far fa-check-circle"></i> MVC architecture</li>
+        <li><i class="far fa-check-circle"></i> OOP</li>
+        <li><i class="far fa-check-circle"></i> Test du code : Minitest, RSpec, TDD</li>
+        <li><i class="far fa-check-circle"></i> Active Storage file management</li>
+        <li><i class="far fa-check-circle"></i> Usage des gems : Devise, Sidekiq & more !</li>
+      </ul>
     </div>
-    <%=image_tag("picme.png", alt: "Belle photo de moi", class: "picme")%>
-  </div>
 
-  <div class="container">
-    <h2>Skills</h2>
-    <div id="skills">
-      <div class="box">
-        <i class="fas fa-gem"></i>
-        <h3>Ruby on Rails</h3>
-        <ul>
-          <li><i class="far fa-check-circle"></i> Langage Ruby</li>
-          <li><i class="far fa-check-circle"></i> MVC architecture</li>
-          <li><i class="far fa-check-circle"></i> OOP</li>
-          <li><i class="far fa-check-circle"></i> Test du code : Minitest, RSpec, TDD</li>
-          <li><i class="far fa-check-circle"></i> Active Storage file management</li>
-          <li><i class="far fa-check-circle"></i> Usage des gems : Devise, Sidekiq & more !</li>
-        </ul>
-      </div>
+    <div class="box">
+      <i class="fab fa-js-square"></i>
+      <h3>JavaScript</h3>
+      <ul>
+        <li><i class="far fa-check-circle"></i> Édition ES6</li>
+        <li><i class="far fa-check-circle"></i> Animations dynamiques d'une page</li>
+        <li><i class="far fa-check-circle"></i> MAJ sans refresh avec AJAX</li>
+        <li><i class="far fa-check-circle"></i> Node.js</li>
+        <li><i class="far fa-check-circle"></i> En cours : React, Vue.js</li>
+      </ul>
+    </div>
 
-      <div class="box">
-        <i class="fab fa-js-square"></i>
-        <h3>JavaScript</h3>
-        <ul>
-          <li><i class="far fa-check-circle"></i> Édition ES6</li>
-          <li><i class="far fa-check-circle"></i> Animations dynamiques d'une page</li>
-          <li><i class="far fa-check-circle"></i> MAJ sans refresh avec AJAX</li>
-          <li><i class="far fa-check-circle"></i> Node.js</li>
-          <li><i class="far fa-check-circle"></i> En cours : React, Vue.js</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <i class="fas fa-tools"></i>
-        <h3>Mais aussi...</h3>
-        <ul>
-          <li><i class="far fa-check-circle"></i> HTML5 & CSS3</li>
-          <li><i class="far fa-check-circle"></i> Boostrap framework</li>
-          <li><i class="far fa-check-circle"></i> Langage SQL & PostgreSQL</li>
-          <li><i class="far fa-check-circle"></i> Git</li>
-          <li><i class="far fa-check-circle"></i> Heroku</li>
-        </ul>
-      </div>
+    <div class="box">
+      <i class="fas fa-tools"></i>
+      <h3>Mais aussi...</h3>
+      <ul>
+        <li><i class="far fa-check-circle"></i> HTML5 & CSS3</li>
+        <li><i class="far fa-check-circle"></i> Boostrap framework</li>
+        <li><i class="far fa-check-circle"></i> Langage SQL & PostgreSQL</li>
+        <li><i class="far fa-check-circle"></i> Git</li>
+        <li><i class="far fa-check-circle"></i> Heroku</li>
+      </ul>
     </div>
   </div>
+</div>
 
-  <div class="container" id="work">
-    <h2>My different projects</h2>
-    <div class="project">
-      <% @projects.each do |project| %>
-        <div class="project-card">
-          <%= cl_image_tag project.photo.key, height: 300, width: 400, crop: :fit %>
-          <h3><%= project.title %></h3>
-          <p><%= project.description %></p>
-          <p><%= project.languages %></p>
-          <p><%= project.others %></p>
-          <p><%= project.url %></p>
-        </div>
-      <% end %>
-    </div>
+<div class="container" id="work">
+  <h2>My different projects</h2>
+  <div class="project">
+    <% @projects.each do |project| %>
+      <div class="project-card">
+        <%= cl_image_tag project.photo.key, height: 300, width: 400, crop: :fit %>
+        <h3><%= project.title %></h3>
+        <p><%= project.description %></p>
+        <p><%= project.languages %></p>
+        <p><%= project.others %></p>
+        <p><%= project.url %></p>
+      </div>
+    <% end %>
   </div>
+</div>
 
-  <div class="container my-5" id="contact">
-    <!-- <a href="/../../assets/images/cv_pouzon_steven.pdf" download><i class="fas fa-cloud-download-alt"></i></a> -->
-    <a href="mailto:spouzon@gmail.com" target="_blank"><i class="far fa-paper-plane"></i></a>
-    <a href="https://www.linkedin.com/in/stevenpzn/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/StvnPzn" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-
+<div class="container my-5" id="contact">
+  <!-- <a href="/../../assets/images/cv_pouzon_steven.pdf" download><i class="fas fa-cloud-download-alt"></i></a> -->
+  <a href="mailto:spouzon@gmail.com" target="_blank"><i class="far fa-paper-plane"></i></a>
+  <a href="https://www.linkedin.com/in/stevenpzn/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/StvnPzn" target="_blank"><i class="fab fa-github"></i></a>
 </div>

@@ -26,8 +26,8 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
-// import { initScroll } from '../components/navbar.js';
+import { initScroll } from '../components/navbar.js';
 
 document.addEventListener('turbolinks:load', () => {
-  // initScroll();
+  initScroll();
 });
