@@ -6,10 +6,14 @@
 }
 
 .project .project-card {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 2px;
   border: 1px solid black;
   overflow: hidden;
   transition: all 250ms ease;
+  height: 650px;
   &:hover {
     box-shadow: 3px 3px 0px #d14519;
   }
@@ -25,4 +29,8 @@
   h3, p {
     padding: 0 0 0 10px;
   }
+}
+
+.project-description {
+  text-align: center;
 }

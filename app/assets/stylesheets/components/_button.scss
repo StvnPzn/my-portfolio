@@ -1,0 +1,11 @@
+.button-project {
+  background-color: #d14519;
+  border-radius: 2px;
+  padding: 10px 10px;
+  color: black;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 3px 3px 0px black;
+    color: black;
+  }
+}
