@@ -16,6 +16,7 @@
   height: 650px;
   &:hover {
     box-shadow: 3px 3px 0px #d14519;
+    transform: scale(1.05);
   }
   img {
     width: 116%;
@@ -27,7 +28,7 @@
     color: #d14519;
   }
   h3, p {
-    padding: 0 0 0 10px;
+    padding: 0 10px;
   }
 }
 
